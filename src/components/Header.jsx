@@ -40,7 +40,7 @@ const Header = () => {
     // CONTENEUR PRINCIPAL - STICKY HEADER
     // ============================================
     <div className="fixed w-full top-0 z-50 bg-green-900/30 backdrop-blur-xl border-b border-green-500/25 shadow-lg">
-      <nav className="layout flex justify-between items-center py-3 px-4 lg:px-8">
+      <nav className="layout flex justify-between items-center py-3 px-4 lg:px-8 overflow-hidden">
         {/* ============================================
             LOGO - Cliquable vers l'accueil
             ============================================ */}
@@ -48,7 +48,7 @@ const Header = () => {
           <img
             src={Logospb}
             alt="Logo"
-            className="w-[70px] sm:w-[è0px] md:w-[70px] rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+            className="w-[70px] sm:w-[70px] md:w-[70px] rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
           />
         </Link>
 

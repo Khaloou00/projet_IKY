@@ -14,3 +14,7 @@
 .inputForm {
   @apply w-full focus:outline-none border border-gray-300 rounded-md p-2;
 }
+html,
+body {
+  overflow-x: hidden;
+}
