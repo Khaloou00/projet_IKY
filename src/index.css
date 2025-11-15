@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.layout {
+  @apply max-w-[85%] mx-auto;
+}
+
+.active {
+  @apply text-primary font-medium;
+}
+
+@theme {
+  --color-primary: #2e539e;
+}
+.inputForm {
+  @apply w-full focus:outline-none border border-gray-300 rounded-md p-2;
+}
