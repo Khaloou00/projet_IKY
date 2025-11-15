@@ -9,6 +9,11 @@ const Home = () => {
           Welcome to BuyGoos
         </h1>
       </div>
+      <div class="min-h-screen bg-gradient-to-br from-blue-200 to-emerald-200 p-8">
+        <p class="text-white bg-green-900/30 backdrop-blur-xl border-b border-green-500/25 px-4 py-2 inline-block">
+          Texte lisible sur fond vert semi-transparent avec effet de flou
+        </p>
+      </div>
     </div>
   );
 };

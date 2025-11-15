@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router";
 import Header from "./Header";
 import WhatsappContact from "./WhatsappContact";
+import Footer from "./Footer";
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
         <WhatsappContact />
       </div>
       <Outlet />
+      <Footer />
     </>
   );
 };
