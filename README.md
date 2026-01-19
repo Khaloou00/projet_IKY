@@ -1,17 +1,41 @@
-# React + Vite
+# 🛍️ SuperBies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SuperBies est une plateforme e-commerce moderne avec deux univers :
 
-Currently, two official plugins are available:
+- **S** : Santé & Soins
+- **B** : Bijoux
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Le projet vise à offrir une expérience fluide, rapide et élégante pour la vente en ligne, avec une architecture moderne et scalable.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Fonctionnalités principales
 
-## Expanding the ESLint configuration
+- 🛒 Catalogue produits (Santé & Bijoux)
+- 🧾 Détails produit avec images
+- 🛍️ Panier temporaire (localStorage)
+- 📱 Design responsive (mobile & desktop)
+- ⚡ Performance optimisée
+- 🔐 Intégration backend prête (Supabase / Firebase)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Superbie
+---
+
+## 🛠️ Stack technique
+
+- **Frontend** : React.js / Vite
+- **UI** : Tailwind CSS
+- **Backend** : Supabase (prévu)
+- **Auth** : Email / Google (optionnel)
+- **Déploiement** : Vercel
+- **Versioning** : Git & GitHub
+
+---
+
+## 📦 Installation locale
+
+```bash
+git clone https://github.com/USERNAME/NOM_DU_REPO.git
+cd superbies
+npm install
+npm run dev
+```
