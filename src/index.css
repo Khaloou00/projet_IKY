@@ -1,0 +1,26 @@
+@import "tailwindcss";
+/* Styles pour GoodDeals */
+.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.arrowStyle {
+  @apply w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 hover:shadow-lg active:scale-95;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Swiper custom styles */
+.swiper {
+  padding: 10px 0;
+}
+
+.swiper-slide {
+  height: auto;
+}
