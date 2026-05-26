@@ -1,7 +1,7 @@
 {
-  "name": "khalilecommerce",
+  "name": "superbe-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.1",
-    "@supabase/supabase-js": "^2.89.0",
     "@tailwindcss/vite": "^4.1.18",
-    "@tanstack/react-query": "^5.90.12",
+    "chart.js": "^4.4.9",
     "date-fns": "^4.1.0",
+    "framer-motion": "^12.38.0",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.562.0",
     "rc-drawer": "^7.3.0",

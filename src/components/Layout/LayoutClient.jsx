@@ -1,7 +1,13 @@
-import React from "react";
+import Header from '../Shared/Header'
+import Footer from '../Shared/Footer'
+import { Outlet } from 'react-router'
 
-const LayoutClient = () => {
-  return <div>LayoutClient</div>;
-};
+const LayoutClient = () => (
+  <>
+    <Header />
+    <Outlet />
+    <Footer />
+  </>
+)
 
-export default LayoutClient;
+export default LayoutClient

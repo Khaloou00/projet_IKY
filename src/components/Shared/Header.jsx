@@ -1,4 +1,5 @@
-import React, { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router";
 import Logospb from "../../assets/images/Logo_superbie.png";
 
@@ -61,24 +62,6 @@ const NavLinkItem = ({ to, label, icon: Icon, onClick }) => (
   </NavLink>
 );
 
-const MobileNavLink = ({ to, label, icon: Icon, onClick, badge }) => (
-  <NavLink
-    to={to}
-    onClick={onClick}
-    className={({ isActive }) =>
-      `flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors ${
-        isActive ? "bg-white/20 text-yellow-400" : ""
-      }`
-    }
-  >
-    <Icon className="text-xl" /> {label}
-    {badge !== undefined && badge > 0 && (
-      <span className="ml-auto bg-yellow-500 text-white rounded-full px-2 py-1 text-xs font-bold">
-        {badge}
-      </span>
-    )}
-  </NavLink>
-);
 
 const DropdownItem = ({ to, label, icon: Icon, color, onClick }) => (
   <Link
@@ -97,7 +80,9 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const [contactMenuOpen, setContactMenuOpen] = useState(false);
-  const [cartCount] = useState(100);
+  const cartCount = useSelector((state) =>
+    state.cart.items.reduce((sum, item) => sum + item.quantity, 0)
+  );
 
   const contactRef = useRef(null);
   const userRef = useRef(null);
