@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router'
 import toast from 'react-hot-toast'
 import { HiArrowLeft } from 'react-icons/hi'
 import { useForgotPasswordMutation } from '../services/api/authApi'
-import AuthLayout from '../components/shared/AuthLayout'
+import AuthLayout from '../components/Shared/AuthLayout'
 
 const ForgotPassword = () => {
   const navigate = useNavigate()

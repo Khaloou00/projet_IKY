@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router'
 import toast from 'react-hot-toast'
 import { HiEye, HiEyeOff } from 'react-icons/hi'
 import { useResetPasswordMutation } from '../services/api/authApi'
-import AuthLayout from '../components/shared/AuthLayout'
+import AuthLayout from '../components/Shared/AuthLayout'
 
 const DIGITS = 6
 

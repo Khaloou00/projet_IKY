@@ -5,7 +5,7 @@ import toast from 'react-hot-toast'
 import { HiEye, HiEyeOff } from 'react-icons/hi'
 import { useLoginMutation } from '../services/api/authApi'
 import { setCredentials } from '../features/auth/authSlice'
-import AuthLayout from '../components/shared/AuthLayout'
+import AuthLayout from '../components/Shared/AuthLayout'
 
 const SignIn = () => {
   const navigate = useNavigate()

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import toast from 'react-hot-toast'
 import { useVerifyOtpMutation, useResendOtpMutation } from '../services/api/authApi'
 import { setCredentials } from '../features/auth/authSlice'
-import AuthLayout from '../components/shared/AuthLayout'
+import AuthLayout from '../components/Shared/AuthLayout'
 
 const DIGITS = 6
 const RESEND_DELAY = 60

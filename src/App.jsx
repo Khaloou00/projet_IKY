@@ -6,7 +6,7 @@ import LayoutAdmin from './components/Layout/LayoutAdmin'
 import LayoutDeliveryMan from './components/Layout/LayoutDeliveryMan'
 
 // Auth guard
-import ProtectedRoute from './components/shared/ProtectedRoute'
+import ProtectedRoute from './components/Shared/ProtectedRoute'
 
 // Hydration hook
 import { useAuthHydration } from './hooks/useAuthHydration'
